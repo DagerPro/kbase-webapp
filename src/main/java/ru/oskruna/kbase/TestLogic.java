@@ -1,6 +1,30 @@
 package ru.oskruna.kbase;
 
-public class TestLogic {
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+public class TestLogic extends javax.servlet.http.HttpServlet{
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        if(request.getAttribute() != "" && request.getAttribute()){
+
+        }
+
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+    }
+
    /* function doGet(e) {
         if(e.queryString !== '' && e.parameter.a == 1) return HtmlService.createHtmlOutputFromFile('knowledge-base');
         if(e.queryString !== '' && e.parameter.p1 != "") {
