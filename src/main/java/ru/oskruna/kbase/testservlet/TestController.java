@@ -1,14 +1,11 @@
-package testservlet;
+package ru.oskruna.kbase.testservlet;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import testservlet.Ticket;
-import testservlet.TicketRepository;
 
 @Controller    // This means that this class is a Controller
 @RequestMapping(path="/demo") // This means URL's start with /demo (after Application path)
@@ -29,7 +26,7 @@ public class TestController {
 		Ticket ticket = new Ticket();
 		ticket.setAutor(autor);
 		ticket.setRequest(request);
-    ticket.setAnswer(answer);
+        ticket.setAnswer(answer);
 		ticketRepository.save(ticket);
 		return "Saved";
 	}
