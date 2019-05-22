@@ -1,6 +1,8 @@
 package ru.oskruna.kbase;
 
 
+import ru.oskruna.kbase.testservlet.TestNewProblem;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,9 +14,8 @@ public class TestLogic extends javax.servlet.http.HttpServlet{
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-      //  if(request.getAttribute() != "" && request.getAttribute()){
-
-     //   }
+            TestNewProblem problem = new TestNewProblem(request.getParameter("problem"),
+                    request.getParameter("resolve"), request.getParameter("autor"));
 
     }
 

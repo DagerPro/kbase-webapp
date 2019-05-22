@@ -14,8 +14,7 @@
 <div style="margin: 100px auto; text-align: center; width: 500px;">
     <p><b>Ваше обращение зафиксировано. Спасибо!</b></p><br>
     <p>Вы сможете увидеть его на главной странице после проверки модератором.</p>
-    <p style="font-size: 12px; margin:15px 0 25px">
-    </p>
+    <p style="font-size: 12px; margin:15px 0 25px">   </p>
     <p><a href="https://script.google.com/macros/s/AKfycbzl1nEfqH0YdMFbx-IhcDK43vbj4ujIfBjp4xzplxUVaGbz2ng/exec" title="Вернуться на главную страницу">Вернуться на главную страницу</a></p>
 </div>
 
