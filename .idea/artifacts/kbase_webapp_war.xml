@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="kbase-webapp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="kbase-webapp.war">
+      <element id="artifact" artifact-name="kbase-webapp:war exploded" />
+    </root>
+  </artifact>
+</component>
