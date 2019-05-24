@@ -36,4 +36,10 @@ public class TestController {
 		// This returns a JSON or XML with the users
 		return ticketRepository.findAll();
 	}
+	
+	@GetMapping(path="/test")
+	public String getTestJsp() {
+		return "testjsp";
+	}
+
 }
