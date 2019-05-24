@@ -4,7 +4,19 @@
 
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
-
+ 
+   <servlet>
+      <servlet-name>TestWeb</servlet-name>
+      <servlet-class>
+        org.springframework.web.servlet.DispatcherServlet
+      </servlet-class>
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>TestWeb</servlet-name>
+      <url-pattern>/</url-pattern>
+   </servlet-mapping>
+ 
     <servlet>
         <servlet-name>index.jsp</servlet-name>
         <jsp-file>/</jsp-file>
